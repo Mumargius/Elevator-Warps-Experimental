@@ -1,9 +1,10 @@
-package net.mumargius.gemwarps;
+package net.mumargius.elevatorwarps;
 
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,18 +15,25 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.mumargius.elevatorwarps.items.CreativeTabs;
+import net.mumargius.elevatorwarps.items.WarpItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(WarpPads.MODID)
-public class WarpPads
+@Mod(ElevatorWarps.MODID)
+public class ElevatorWarps
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "gemwarps";
+    public static final String MODID = "elevatorwarps";
+
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public WarpPads(FMLJavaModLoadingContext context)
+
+    public ElevatorWarps(FMLJavaModLoadingContext context)
     {
+        //Event Bussies
         IEventBus modEventBus = context.getModEventBus();
+        WarpItems.register(modEventBus);
+        CreativeTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -42,10 +50,13 @@ public class WarpPads
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add the item data to the standard creative tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(WarpItems.TESTBEAR);
+            event.accept(WarpItems.KUMMONSTER);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
