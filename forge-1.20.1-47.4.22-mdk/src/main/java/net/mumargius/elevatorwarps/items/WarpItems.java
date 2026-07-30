@@ -14,7 +14,7 @@ public class WarpItems {
             //Item datas
         public static final RegistryObject<Item> TESTBEAR = ITEMS.register("testbear", 
             () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> KUMMONSTER = ITEMS.register("kummonster", 
+        public static final RegistryObject<Item> WARP_WHISTLE = ITEMS.register("warpwhistle", 
             () -> new Item(new Item.Properties()));
 
         public static void register(IEventBus eventBus){

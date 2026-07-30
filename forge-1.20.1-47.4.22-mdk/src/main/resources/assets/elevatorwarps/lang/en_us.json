@@ -1,6 +1,9 @@
 {
     "item.elevatorwarps.testbear": "TestBear",
-    "item.elevatorwarps.kummonster": "The Kum Monster",
+    "item.elevatorwarps.warpwhistle": "Warp Whistle",
 
-    "creativetab.elevatorwarps_tab": "Bullshits"
+    "block.elevatorwarps.bearblock":"Bear Cubed",
+    "block.elevatorwarps.otherbearblock":"Bear Cubed & Knucles",
+
+    "creativetab.elevatorwarps_tab": "Other Stuff"
 }
