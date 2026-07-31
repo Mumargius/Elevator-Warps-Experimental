@@ -1,0 +1,17 @@
+{
+    "type":"minecraft:crafting_shaped",
+    "category":"misc",
+    "pattern":[
+        "###",
+        "###",
+        "###"
+    ],
+    "key":{
+        "#":{
+            "item":"elevatorwarps:testbear"
+        }
+    },
+    "result":{
+        "item":"elevatorwarps:bearblock"
+    }
+}

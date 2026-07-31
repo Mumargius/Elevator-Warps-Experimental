@@ -1,9 +1,10 @@
 {
     "item.elevatorwarps.testbear": "TestBear",
-    "item.elevatorwarps.warpwhistle": "Warp Whistle",
+    "item.elevatorwarps.warpwhistle": "TestBear Redeux",
 
     "block.elevatorwarps.bearblock":"Bear Cubed",
     "block.elevatorwarps.otherbearblock":"Bear Cubed & Knucles",
 
-    "creativetab.elevatorwarps_tab": "Other Stuff"
+    "creativetab.otherstuff_tab": "Other Stuff",
+    "creativetab.otherotherstuff_tab": "Other Other Stuff"
 }
