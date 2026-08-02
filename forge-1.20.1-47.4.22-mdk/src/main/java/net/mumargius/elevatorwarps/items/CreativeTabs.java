@@ -24,6 +24,8 @@ public class CreativeTabs {
                    
                     pOutput.accept(WarpBlocks.BEARBLOCK.get());
                     pOutput.accept(WarpBlocks.OTHERBEARBLOCK.get());
+                    //pOutput.accept(WarpBlocks.BEARORE.get());
+                    
 
 
                 }).build());
