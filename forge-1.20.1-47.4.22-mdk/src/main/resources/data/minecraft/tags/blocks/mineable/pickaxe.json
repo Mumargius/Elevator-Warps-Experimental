@@ -1,5 +1,6 @@
 {
     "values":[
-        "elevatorwarps:bearblock"
+        "tutorialwarps:bearblock",
+        "tutorialwarps:specialblock"
     ]
 }

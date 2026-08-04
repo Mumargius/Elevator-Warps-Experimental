@@ -1,0 +1,15 @@
+{
+    "item.tutorialwarps.testbear": "TestBear",
+    "item.tutorialwarps.warpwhistle": "TestBear Redeux",
+    "item.tutorialwarps.foodforthought": "Food for Thought",
+    "item.tutorialwarps.hotstuff":"Some Real Hot Stuff",
+
+    "block.tutorialwarps.bearblock":"Bear Cubed",
+    "block.tutorialwarps.otherbearblock":"Bear Cubed & Knucles",
+    "block.tutorialwarps.bearore": "Ore of Bear",
+    "block.tutorialwarps.specialblock": "Special Block of Bear",
+        "tooltip.tutorialwarps.specialblock":"It sounds very nice",
+
+    "creativetab.otherstuff_tab": "Other Stuff",
+    "creativetab.otherotherstuff_tab": "Other Other Stuff"
+}
